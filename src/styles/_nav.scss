@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4%;
+  h2 {
+    letter-spacing: 0.2rem;
+    i {
+      color: #03d64d;
+    }
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 0.3rem 0.75rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.2rem;
+    margin: 0 1.5rem;
+
+    &:hover {
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    &:active {
+      box-shadow: none;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  nav {
+    padding: 0.5rem 0.1rem 0.5rem 5%;
+    h2 {
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.3rem 1rem;
+      z-index: 10;
+      font-size: 0.7rem;
+    }
+  }
+}
